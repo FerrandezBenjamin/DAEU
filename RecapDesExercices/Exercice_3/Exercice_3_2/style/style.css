@@ -101,6 +101,39 @@ section
 /****************** ECRIVEZ VOTRE CSS A PARTIR D'ICI   ***************/
 /**********************************************************************/
 
+.bloc1
+{
+    background-color: red;
+}
 
+.bloc2
+{
+    background-color: green;
+}
 
+.bloc1-width
+{
+    background-color: red;
+    width: 100%;
+}
 
+.bloc2-width
+{
+    background-color: green;
+    width: 100%;
+}
+
+.hard
+{
+    font-size: 12px;
+}
+
+.test 
+{
+    background-color: yellow;
+}
+
+.couleur-text 
+{
+    color:red;
+}
