@@ -1,0 +1,62 @@
+
+body
+{
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container_coordonnees {
+	display: flex;
+	align-items: stretch; /* Les enfants prennent la même hauteur */
+	width: 80%; /* 80% de la largeur disponible */
+	max-height: 80vh; /* Hauteur maximale de 70% de la fenêtre */
+	/* margin: 20px auto;  */
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+  }
+  
+  .text_coordonnees {
+	flex: 1; /* Minimum 30% de la largeur pour le texte */
+	min-width: 30%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column; /* Organise le contenu verticalement */
+	justify-content: center; /* Centre verticalement le texte */
+	background-color: #f9f9f9; /* Couleur douce pour contraster avec l'image */
+	gap: 20px;
+  }
+  
+  .text_coordonnees h2 {
+	margin: 0 0 10px;
+	font-size: 1.5em;
+	color: #333;
+  }
+  
+  .text_coordonnees span {
+	display: block;
+	margin: 5px 0;
+	color: #666;
+	font-size: 0.9em;
+	line-height: 1.4;
+  }
+  
+  .img_coordonnees {
+	flex: 2; /* Prend plus de place pour l'image */
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center; /* Centre l'image verticalement */
+	justify-content: center; /* Centre l'image horizontalement */
+  }
+  
+  .img_coordonnees img {
+	max-width: 100%; /* L'image s'ajuste à la largeur */
+	object-fit: contain; /* L'image entière est visible sans déformation */
+  }
+  
