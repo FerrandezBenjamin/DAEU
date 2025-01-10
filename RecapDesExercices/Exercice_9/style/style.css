@@ -25,7 +25,7 @@ body
 }
 
 section {
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     background-color: bisque;
     position: relative;
@@ -97,8 +97,6 @@ section {
 .base 
 {
     width: 100%;
-    /* height: 80vh; */
-    /* border: 1px solid black; */
 }
 
 /** LES EFFETS A DEVINER **/
@@ -189,20 +187,11 @@ section {
     .classe5 {
         background-color: lightcoral;
         color: white;
-        text-align: left;
+        /* text-align: left; */
         font-style: italic;
         padding: 20px;
         width: 70%;
-        font-size: 3rem;
-    }
-
-    .classe5 span {
-        font-size: 4rem;
-        margin-left: 15px;
-        margin-right: 15px;
-        margin-bottom: 30px;
-        font-weight: bold;
-        text-decoration: underline;
+        font-size: 2rem;
     }
 
     .centerclasse5 {
@@ -214,34 +203,145 @@ section {
         align-items: center;
     }
 
+    .classe5 span {
+        font-size: 3rem;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 30px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+
+
 /**************************/
-/** CLASSE6 **/
+/** CLASSE6 Petit piège **/
 /**************************/
 
+    .classe6 {
+        height: 200px;
+        border: 18px solid grey;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+    }
 
-.classe6 {
-    height: 200px;
-    border: 18px solid grey;
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-}
+    .capsule {
+        width: 50%;
+    }
 
-.capsule {
-    width: 50%;
-}
+    .classe6 p 
+    {
+        background-color: red;
+        color: white;
+        margin: 0px;
+        padding: 10px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
 
-.classe6 p 
-{
-    background-color: red;
-    color: white;
-    margin: 0px;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.5rem;
-}
+    .classe6 textarea {
+        border: none;
+        /* width: 100%; */
+    }
 
-.classe6 textarea {
-    border: none;
-    width: 100%;
-}
+
+/**************************/
+/** CLASSE7 HARD **/
+/**************************/
+
+    .classe7
+    {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+
+    }
+
+    .container-classe7
+    {
+        border: 2px solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 10px;
+        height: 50%;
+        width: 100%;
+    }
+
+    .first-child, .second-child
+    {
+        background-color: white;
+        height: 50%;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .first-child
+    {
+        flex: 2;
+    }
+
+    .second-child
+    {
+        flex: 8;
+    }
+
+/**************************/
+/** CLASSE8 **/
+/**************************/
+
+    .classe8 {
+        background-color: white;
+        width: 50%;
+        height: 50%;
+        padding: 15px;
+        position: relative;
+    }
+
+    .classe8 > p {
+        text-transform: uppercase;
+    }
+
+    .classe8 > p > span {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        color: white;
+        padding: 15px;
+        background-color: black;
+    }
+
+/**************************/
+/** CLASSE9 **/
+/**************************/
+
+    .classe9 {
+        background-color: white;
+        width: 50%;
+        height: 50%;
+        padding: 15px;
+        position: relative;
+    }
+
+    .classe9 > span {
+        text-transform: uppercase;
+    }
+
+    .classe9 > p { color: blue; }
+    .classe9 > div > p { color: red;}
+    .classe9 > p > span {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: white;
+        padding: 15px;
+        background-color: black;
+        max-width: 80%;
+        min-width: 70%;
+
+    }
+
+    .spanInClass9 {
+        letter-spacing: 2px;
+    }
