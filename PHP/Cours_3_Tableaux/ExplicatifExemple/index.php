@@ -67,8 +67,8 @@ function concatFunctionOneAndTwo($nombre1, $nombre2)
     sauteUnNombreDeLigne(2);
     
     echo "<b>Ajout du fruit 'Mangue' dans le tableau</b>";
-    sauteUnNombreDeLigne(1);
     $fruits[] = "Mangue"; // ajoute "Mangue à la fin du tableau
+    sauteUnNombreDeLigne(1);
     
 
     // Nouvelle fonctionnalité, var_dump() 
@@ -177,25 +177,25 @@ function concatFunctionOneAndTwo($nombre1, $nombre2)
 
 
     // Création du tableau associatif. On associe donc une valeur a une clef :
-    $personne = [
+    $personnes = [
         "nom" => "Dupont",
         "prenom" => "Maxime",
         "age" => 36
     ];
 
   
-    echo $personne["nom"]; // Resultat = "Dupont"
+    echo $personnes["nom"]; // Resultat = "Dupont"
     sauteUnNombreDeLigne(1);
 
-    echo $personne["age"]; // Resultat = 36
+    echo $personnes["age"]; // Resultat = 36
     sauteUnNombreDeLigne(2);
 
     echo "<b>Ajout de la clé 'pays' et lui donne la valeur 'France'</b>";
 
-    $personne["pays"] = "France"; // Ajoute une clé "pays"
+    $personnes["pays"] = "France"; // Ajoute une clé "pays"
     sauteUnNombreDeLigne(1);
 
-    var_dump($personne);
+    var_dump($personnes);
     sauteUnNombreDeLigne(1);
 
 
@@ -232,21 +232,23 @@ function concatFunctionOneAndTwo($nombre1, $nombre2)
          //----------------------------------------------
     //----------------------------------------------
 
-    // Création du tableau multidimensionnel. On associe une valeur a une clef :
+    // Création du tableau multidimensionnel. On associe une valeur a une clé :
     $etudiants = [
         ["nom" => "Alice", "age" => 25],
         ["nom" => "Bob", "age" => 22]
     ];
 
     echo $etudiants[0]["nom"]; // Resultat : "Alice"
-     sauteUnNombreDeLigne(1);;
+    sauteUnNombreDeLigne(1);
 
     echo $etudiants[1]["age"]; // Resultat : 22
-     sauteUnNombreDeLigne(1);;
+    sauteUnNombreDeLigne(1);
 
-    $personne["age"] = 26;
-     sauteUnNombreDeLigne(1);;
+    $etudiants[] = ["nom" => "Maurine", "age" => 36]; // ajout d'un nouveau tableau dans le tableau multidimensionnel
+    sauteUnNombreDeLigne(1);
 
+    echo "<b>Preuve de l'ajout du nouveau tableau :</b> <br>";
+    var_dump($etudiants);
 
 /******************************************************************/
 /***************** FIN TABLEAU MULTIDIMENSIONNEL ******************/
@@ -298,14 +300,25 @@ function concatFunctionOneAndTwo($nombre1, $nombre2)
      */
 
         sauteUnNombreDeLigne(1);
-        echo "<b>BOUCLE FOREACH :</b>";
+        echo "<b>BOUCLE FOREACH BASIC :</b>";
         sauteUnNombreDeLigne(1);
 
-        foreach($fruits as $fruit)
+        foreach($personnes as $personne)
         {
-            echo $fruit;
+            echo $personne;
             sauteUnNombreDeLigne(1);
         }
+
+        sauteUnNombreDeLigne(1);
+        echo "<b>BOUCLE FOREACH avec CLE & VALEUR :</b>";
+        sauteUnNombreDeLigne(1);
+
+        foreach($personnes as $cle => $valeur)
+        {
+            echo "Sa cle est : " . $cle . " || sa valeur est : ". $valeur;
+            sauteUnNombreDeLigne(1);
+        }
+
 
     /*********************************************************/
     /***************** FIN BOUCLE FOREACH  *******************/
