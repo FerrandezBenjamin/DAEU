@@ -28,7 +28,6 @@
  */
 
 
-
     /***********************/
     /** AJOUTER UN MEMBRE **/
     /***********************/
@@ -122,7 +121,64 @@
 
 
 
+    /**
+     * 
+     * TP3
+     */
 
+     // Le tableau
+     $tabMulti = [
+        [
+            'nom' => 'dupres',
+            'notes' => [
+                'Maths' => 12,
+                'Francais' => 18,
+                'Histoire' => 4
+            ],
+        ],
+        [
+            'nom' => 'moutey',
+            'notes' => [
+                'Maths' => 2,
+                'Francais' => 14,
+                'Histoire' => 9
+            ],
+        ],
+        [
+            'nom' => 'keron',
+            'notes' => [
+                'Maths' => 16,
+                'Francais' => 8,
+                'Histoire' => 4
+            ],
+        ]
+    ];
+
+    //Affichage du tableau ci dessus
+    var_dump($tabMulti);
+    
+    //Function création
+    function addNewEleve(&$tabMulti, $name, $notes)
+    {
+        // A vous de completer
+    }
+
+    //Création variable pour l'ajout
+    $name = "VotrePrenom";
+    $notes = [];
+
+    //L'execution de la fonction
+    addNewEleve($tabMulti, $name, $notes);
+
+    //Affichage des données
+    foreach($tabMulti as $tab)
+    {
+        // a vous, TESTER DES CHOSES, des echo de variable, du tableau !
+    }
+
+
+    
+    
 
 
 ?>
