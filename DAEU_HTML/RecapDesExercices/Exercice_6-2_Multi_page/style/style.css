@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+	margin: 0;
+	padding : 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  flex-direction: column;
+	height: 100vh;
+	background-color: rgb(37, 45, 45);
+  gap: 15px;
+}
+
+.btn-base
+{
+  padding: 12px;
+  background-color: rgb(62, 72, 170);
+  border: none;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+body > h1 
+{
+    color: white;
+}
+
+
+/*******************/
+/** VOTRE CSS ICI **/
+/*******************/

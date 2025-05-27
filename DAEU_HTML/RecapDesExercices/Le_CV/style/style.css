@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	margin:0px;
+	padding:0px;
+	font-family: 'Roboto', sans-serif;
+}
+
+nav
+{
+	position: sticky;
+	top: 0;
+	width: 100%;
+}
+
+section
+{
+	min-height: 100vh;
+}
+
+#presentation
+{
+	background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../../img/abstract.jpg");
+	background-size: cover; /* Ajuste l’image pour qu’elle couvre tout l’écran */
+	background-position: center; /* Centre l'image */
+	background-repeat: no-repeat; /* Évite la répétition de l’image */
+	display: flex;
+	align-items: center;
+}
+
+.img_presentation
+{
+	/* max-width: 200px;
+    min-width: 300px; */
+}
+
+.presentation_block
+{
+	padding: 15px;
+	display: flex;
+	/* flex-direction: column; */
+	color:rgb(60, 43, 93);
+	font-size: 27px;
+	margin-top: 50px;
+}
+
+nav ul
+{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	background-color:rgb(255 255 255 / 70%);
+	width:100%;
+	overflow:hidden;
+}
+	
+nav li a
+{
+	display:block;
+	color:rgb(60, 43, 93);
+	text-align:center;
+	text-decoration:none;
+	padding: 15px;
+}
+
+nav li a:hover
+{
+	background-color:rgb(40, 133, 156);
+}
+
+
+.center
+{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.nav-top
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.direction-row
+{
+	flex-direction: row;
+}
+
+.direction-column
+{
+	flex-direction: column;
+}
+
+.max-size
+{
+	width: 100%;
+}
+
+#presentation
+{
+	background-color: #f0f4f8;
+}
+
+#coordonnees
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+	background-color: #d1bdbdd4;
+}
+
+
+.title-section 
+{
+	width: 100%;
+	min-height: 50px;
+	color: white;
+	background-color:rgb(40, 133, 156);
+}
+
+
+.container_coordonnees {
+	display: flex;
+	align-items: stretch; /* Les enfants prennent la même hauteur */
+	width: 80%; /* 80% de la largeur disponible */
+	max-height: 80vh; /* Hauteur maximale de 70% de la fenêtre */
+	/* margin: 20px auto;  */
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+  }
+  
+  .text_coordonnees {
+	flex: 1; 
+	min-width: 30%; /* Minimum 30% de la largeur pour le texte */
+	padding: 20px;
+	display: flex;
+	flex-direction: column; /* Organise le contenu verticalement */
+	justify-content: center; /* Centre verticalement le texte */
+	background-color: #f9f9f9; /* Couleur douce pour contraster avec l'image */
+	gap: 20px;
+  }
+  
+  .text_coordonnees h2 {
+	margin: 0 0 10px;
+	font-size: 1.5em;
+	color: #333;
+  }
+  
+  .text_coordonnees span {
+	display: block;
+	margin: 5px 0;
+	color: #666;
+	font-size: 0.9em;
+	line-height: 1.4;
+  }
+  
+  .img_coordonnees {
+	flex: 2; /* Prend plus de place pour l'image */
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center; /* Centre l'image verticalement */
+	justify-content: center; /* Centre l'image horizontalement */
+  }
+  
+  .img_coordonnees img {
+	max-width: 100%; /* L'image s'ajuste à la largeur */
+	object-fit: contain; /* L'image entière est visible sans déformation */
+  }
+
+  
+
+.container_coordonnees {
+	display: flex;
+	align-items: stretch; /* Les enfants prennent la même hauteur */
+	width: 80%; /* 80% de la largeur disponible */
+	max-height: 80vh; /* Hauteur maximale de 70% de la fenêtre */
+	/* margin: 20px auto;  */
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+  }
+  
+  .text_coordonnees {
+	flex: 1; 
+	min-width: 30%; /* Minimum 30% de la largeur pour le texte */
+	padding: 20px;
+	display: flex;
+	flex-direction: column; /* Organise le contenu verticalement */
+	justify-content: center; /* Centre verticalement le texte */
+	background-color: #f9f9f9; /* Couleur douce pour contraster avec l'image */
+	gap: 20px;
+  }
+  
+  .text_coordonnees h2 {
+	margin: 0 0 10px;
+	font-size: 1.5em;
+	color: #333;
+  }
+  
+  .text_coordonnees span {
+	display: block;
+	margin: 5px 0;
+	color: #666;
+	font-size: 0.9em;
+	line-height: 1.4;
+  }
+  
+  .img_coordonnees {
+	flex: 2; /* Prend plus de place pour l'image */
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center; /* Centre l'image verticalement */
+	justify-content: center; /* Centre l'image horizontalement */
+  }
+  
+  .img_coordonnees img {
+	max-width: 100%; /* L'image s'ajuste à la largeur */
+	object-fit: contain; /* L'image entière est visible sans déformation */
+  }
+  
+  
+.mesprojets
+{
+    padding: 15px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.basic-card {
+    width: 350px;
+    min-height: 450px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow: hidden;
+}
+
+.imageprojet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.imageprojet > a > img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.basic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.title-projet {
+    font-size: 1.5rem;
+    padding: 05px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #cd5d5d;
+    text-align: center;
+}
+
+.container-projet {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    flex-grow: 1;
+    /* box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+}
+
+/** Exo 8 ici **/
+/*******************************/
+
+
+.container-hobbies
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+}
+
+#sportif
+{
+	position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../../img/fondsportif.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+.first-hobbies {
+	background-color: rgb(228, 223, 223);
+	flex: 7; /* Obtient 7 part de l'espace disponible */
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+}
+
+.second-hobbies {
+	flex: 3; /* Obtient 3 part de l'espace disponible */
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.life-summary {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 500px; /* Limite la largeur pour éviter que le texte ne soit trop étiré */
+    margin: 20px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.life-summary h2 {
+    font-size: 24px;
+    color: #B84A42; /* La couleur du titre correspond à une nuance du design de la capture */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.life-summary p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/*******************************/
+  
+
+/* Ajout du bouton return accueil */
+/*******************************/
+
+.return-accueil {
+    position: fixed; /* Fixe l'élément par rapport à l'écran */
+    bottom: 20px; /* Distance depuis le bas de l'écran */
+    right: 20px; /* Distance depuis le bord droit de l'écran */
+    cursor: pointer; /* Indique qu'il s'agit d'un élément cliquable */
+    z-index: 1000; /* Place l'élément au-dessus des autres contenus */
+    background-color: rgba(255, 255, 255, 0.6); /* Optionnel : ajoute un fond semi-transparent */
+    border-radius: 50%; /* Donne une forme arrondie au fond */
+    padding: 10px; /* Espace autour de l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour le style */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Animation pour l'effet au survol */
+}
+
+.return-accueil:hover {
+    background-color: rgba(233, 226, 226, 0.8); /* Change la couleur au survol */
+    transform: scale(1.1); /* Agrandit légèrement la flèche au survol */
+}
+
+.return-accueil img {
+    width: 30px; /* Taille de l'image (peut être ajustée) */
+    height: auto; /* Maintient les proportions de l'image */
+}
+
+/*******************************/
+/*******************************/
+
+
+
+
+  
