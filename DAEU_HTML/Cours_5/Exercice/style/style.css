@@ -6,3 +6,100 @@
 	margin: 0;
 	padding: 0;
 }
+
+html
+{
+	width: 100%;
+	height: 100vh;
+	font-family: 'Roboto', sans-serif;
+}
+
+body, main
+{
+	width: 100%;
+	height: 100%;
+}
+
+section
+{
+	min-height: 100vh;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+main
+{
+	position: relative;
+}
+
+nav
+{
+	background-color: rgb(201, 201, 214);
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+
+nav ul {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	/* gap: 25px; */
+	height: 100%;
+	/* margin-right: 35px; */
+}
+
+ul, li {
+	list-style: none;
+}
+
+.btn-1
+{
+	color: black;
+	padding: 10px 25px;
+}
+
+#presentation
+{
+	background-color: rgb(242, 245, 245);
+	height: 100%;
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background:url("../images/paysage.jpg");
+	background-size: cover;
+}
+
+.img-personne
+{
+	width: 350px;
+}
+
+.text-pres
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 7px;
+}
+
+.text-pres h1
+{
+	font-size: 3.5rem;
+	color:rgb(93, 6, 93);
+	font-weight: 900;
+}
+
+.text-pres span
+{
+	font-size: 1.7rem;
+	margin-top: 18px;
+}
