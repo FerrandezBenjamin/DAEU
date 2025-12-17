@@ -10,11 +10,7 @@
 
 <?php
 
-if (isset($_GET["etudiant"])) {
-    $etudiantWas = htmlspecialchars($_GET['etudiant']);
-    echo "Je suis l'étudiant : <b>" . $etudiantWas ."</b>.";
-} else {
-    echo "<p>Un paramètre GET est attendu.</p>";
-}
+// A vous ! 
+// Ici, je dois receptionner mon formulaire avec en parametre GET le nom de l'étudiant 
 
 ?>
