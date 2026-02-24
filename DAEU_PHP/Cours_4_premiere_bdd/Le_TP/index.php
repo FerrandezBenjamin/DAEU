@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenue</title>
     <link rel="stylesheet" href="style/style.css">
+    <style>
+        .server-message {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 15px 25px;
+            margin: 15px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .success { background-color: #e6ffed; color: #1e7e34; border: 2px solid #28a745; }
+        .warning { background-color: #fff3cd; color: #856404; border: 2px solid #ffc107; }
+        .danger  { background-color: #f8d7da; color: #721c24; border: 2px solid #dc3545; }
+    </style>
 </head>
 <body class="fond">
     <div class="global">
@@ -14,39 +27,21 @@
             </div>
             <div>
                 <a href="etudiants/etudiants.php" class="btn">Voir les etudiants</a>
-                <a href="#" class="btn">Voir les articles</a>
+                <a href="articles/articles.php" class="btn">Voir les articles</a>
             </div>
         </div>
+
         <div class="container_principal">
             <div class="accueil center flex-column">
-            
-                
-                <?php if (isset($_GET['success']) && $_GET['success'] == 1): ?>
-                    <p style="color: green;font-size:1.5rem">L'étudiant a bien été inscrit !</p>
-                <?php endif; ?>
 
-                <?php if (isset($_GET['deleted']) && $_GET['deleted'] == 1): ?>
-                    <p style="color: orange;font-size:1.5rem">L'étudiant a été supprimé avec succès.</p>
-                <?php endif; ?>
-
-                <?php if (isset($_GET['modified']) && $_GET['modified'] == 1): ?>
-                    <p style="color: red;font-size:1.5rem">La modification a bien été pris en compte !</p>
-                <?php endif; ?>
-
-                <?php if (isset($_GET['error']) && $_GET['error'] == 1): ?>
-                    <p style="color: red;font-size:1.5rem">Une erreur s'est produite. Aucun étudiant n'a été supprimé.</p>
-                <?php endif; ?>
-
+                <?php
+                    // Gérer ici les messages reçu par un get
+                ?>
 
                 <h1 class="bvn">Bienvenue</h1>
-                
+
             </div>
         </div>
     </div>
-</div>
-
-
-
-
 </body>
 </html>

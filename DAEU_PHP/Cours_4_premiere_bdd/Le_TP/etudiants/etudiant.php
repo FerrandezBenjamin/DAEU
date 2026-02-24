@@ -5,17 +5,23 @@ include('../fonctions/fonction.php');
 
 if(!empty($_GET['id']) && $_GET['id'] !== null)
 {
-    $sqlSearchStudent = 'SELECT * FROM etudiants WHERE etudiant_id =' . $_GET['id'] . ' LIMIT 1';
-    $result = $connect->query($sqlSearchStudent)->fetch(); // Récupération en tableau associatif
+
+
+    // Faite votre requête SQL ici afin de chercher tous les groupes :
+    $sqlGroupe = null;
+    // Exemple pour l'execution : 
+    // $result = $connect->query($sqlGroupe)->fetch();
+
+    // Ensuite : 
+    // Faite votre requête SQL ici afin de chercher l'étudiant correspondant à son ID
 
     if(empty($result))
     {
         echo 'Erreur. Aucun étudiant trouvé !';
+        die;
     }
 }
 
-$sql = "SELECT * FROM groupes";
-$allGroupes = $connect->query($sql)->fetchAll();
 
 ?>
 

@@ -5,10 +5,13 @@ include('../fonctions/fonction.php');
 
 if (!empty($_GET['id'])) {
 
-    //
+    // A vous de jouer ici ! 
+    // Faire la requete SQL, l'executer, et voir si les données ne sont pas vides !
+    
 
 } else {
-    dd('Manque un parametre id');
+    echo "Une erreur est survenue.";
+    die();
 }
 ?>
 

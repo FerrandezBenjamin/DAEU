@@ -33,7 +33,7 @@ $allGroupes = $connect->query($sql)->fetchAll();
 
             <form action="" method="POST" class="form-inscription">
 
-                <!-- A faire le 26/02/2025 -->
+                <!-- A faire ! -->
 
                 <input type="submit" value="Inscription !">
             </form>

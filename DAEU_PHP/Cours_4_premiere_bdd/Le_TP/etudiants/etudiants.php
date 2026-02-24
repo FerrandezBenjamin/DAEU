@@ -17,14 +17,10 @@ if (!$connect) {
     die("Erreur de connexion à la base de données.");
 }
 
-// Requête pour récupérer tous les étudiants V1
-
-// Requête pour récupérer tous les étudiants et leur groupe V2
+// Requête pour récupérer tous les étudiants et leur groupe 
 $sql = "SELECT * FROM `etudiants` INNER JOIN `groupes` ON etudiants.groupe_id = groupes.groupe_id ORDER BY `etudiant_id` ASC";
-$allStudents = $connect->query($sql)->fetchAll();
+$allStudents = $connect->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 
-// $allStudentsV2 = $connect->query($sql)->fetchAll(PDO::FETCH_OBJ);
-// var_dump($allStudentsV2);
 
 ?>
 <div class="global">
@@ -60,7 +56,7 @@ $allStudents = $connect->query($sql)->fetchAll();
                     <tbody>
                         <?php
                         // Vérifier s'il y a des étudiants
-                        // Faire ici le code PHP pour récupérer et faire afficher tous les étudiants
+                        // Faire ici le code PHP pour faire afficher tous les étudiants.
                         ?>
                     </tbody>
                 </table>
